@@ -3,15 +3,12 @@ Software Development Practices
 2-D Fighting Game
 
 Members:
-Maaka,
-Lance,
-Edward,
-Jordan,
-Dion.
+Maaka,  1
+Lance,  2
+Edward, 3
+Jordan, 4
+Dion.   5
 
-test branch.
+This is the master branch.
 
-wut
-=======
-Master edit.
 

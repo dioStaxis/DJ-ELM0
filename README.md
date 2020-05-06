@@ -1,16 +1,13 @@
 # DJ-ELM0
 Software Development Practices 
-2-D Fighting Game
+2-D Fighting Game (name tbd)
 
 Members:
-Maaka,  1
-Lance,  2
-Edward, 3
-Jordan, 4
-Dion.   5
+Maaka,  
+Lance,  
+Edward, 
+Jordan, 
+Dion.   
 
 This is the master branch.
 
-wut 3 wait am i 2? -Edward
-
-.-.

@@ -63,11 +63,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\bullet.cs" />
-    <Compile Include="Assets\explosion.cs" />
-    <Compile Include="Assets\playerMovement.cs" />
-    <Compile Include="Assets\player_controller.cs" />
-    <Compile Include="Assets\weapon.cs" />
+    <Compile Include="Assets\Knife_item_pickup.cs" />
+    <Compile Include="Assets\knife.cs" />
+    <Compile Include="Assets\playerCombat.cs" />
+    <Compile Include="Assets\script\bullet.cs" />
+    <Compile Include="Assets\script\explosion.cs" />
+    <Compile Include="Assets\script\playerMovement.cs" />
+    <Compile Include="Assets\script\player_controller.cs" />
+    <Compile Include="Assets\script\weapon.cs" />
+    <Compile Include="Assets\sword.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />

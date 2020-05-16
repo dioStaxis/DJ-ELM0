@@ -1,0 +1,41 @@
+###
+# Unity folders and files
+###
+/SDP assignment Git version/[Aa]ssets/AssetStoreTools*
+/SDP assignment Git version/[Bb]uild/
+/SDP assignment Git version/[Ll]ibrary/
+/SDP assignment Git version/[Ll]ocal[Cc]ache/
+/SDP assignment Git version/[Oo]bj/
+/SDP assignment Git version/[Tt]emp/
+/SDP assignment Git version/[Uu]nityGenerated/
+# file on crash reports
+sysinfo.txt
+# Unity3D generated meta files
+*.pidb.meta
+
+###
+# VS/MD solution and project files
+###
+[Ee]xportedObj/
+*.booproj
+*.csproj
+*.sln
+*.suo
+*.svd
+*.unityproj
+*.user
+*.userprefs
+*.pidb
+.DS_Store
+
+###
+# OS generated
+###
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db

@@ -6,14 +6,14 @@ public class sword : MonoBehaviour
 {
     private void Start()
     {
-        playerCombat.current_weapon = 1;
+        playerCombat.current_weapon = playerCombat.weaponName.sowrd;
         StartCoroutine(SwordTimeout());
     }
 
     IEnumerator SwordTimeout()
     {
         yield return new WaitForSeconds(10);
-        playerCombat.current_weapon = 0;
+        playerCombat.current_weapon = playerCombat.weaponName.hand;
         gameObject.SetActive(false);
     }
 }

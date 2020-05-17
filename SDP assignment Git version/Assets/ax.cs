@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ax : MonoBehaviour
 {
-    private void Start()
+    public void equired()
     {
         playerCombat.current_weapon = playerCombat.weaponName.ax;
         StartCoroutine(AxTimeout());
@@ -12,7 +12,7 @@ public class ax : MonoBehaviour
 
     IEnumerator AxTimeout()
     {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(5);
         playerCombat.current_weapon = playerCombat.weaponName.hand;
         gameObject.SetActive(false);
     }

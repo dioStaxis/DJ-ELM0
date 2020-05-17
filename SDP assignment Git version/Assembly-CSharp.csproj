@@ -66,6 +66,7 @@
     <Compile Include="Assets\ax.cs" />
     <Compile Include="Assets\ax_pickup.cs" />
     <Compile Include="Assets\playerCombat.cs" />
+    <Compile Include="Assets\random_generate_item.cs" />
     <Compile Include="Assets\script\bullet.cs" />
     <Compile Include="Assets\script\explosion.cs" />
     <Compile Include="Assets\script\playerMovement.cs" />

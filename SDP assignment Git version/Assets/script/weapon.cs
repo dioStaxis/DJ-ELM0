@@ -11,12 +11,22 @@ public class weapon : MonoBehaviour
 
     public void equipeSword()
     {
-        Ax.SetActive(false);
+        reloadWeapon();
         Sword.SetActive(true);
+        Sword.GetComponent<sword>().equired();
+        
     }
     public void equipeAx()
     {
-        Sword.SetActive(false);
+        reloadWeapon();
         Ax.SetActive(true);
+        Ax.GetComponent<ax>().equired();
+        
+    }
+
+    void reloadWeapon()
+    {
+        Sword.SetActive(false);
+        Ax.SetActive(false);
     }
 }

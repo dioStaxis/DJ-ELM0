@@ -8,15 +8,23 @@ using UnityEngine.UI;
 public class timer : MonoBehaviour
 {
     public TextMeshProUGUI TimeText;
-    private float startTime;
+    public float GameLengthSec = 180f;
+    private float currentTime = 0f;
     private void Start()
     {
-        startTime = Time.time;
+        currentTime = GameLengthSec;
     }
 
     void Update()
     {
-        float t = Time.time - startTime;
-        TimeText.text = t.ToString("0");
+        currentTime -= 1 * Time.deltaTime;
+        TimeText.text = ((currentTime-30)/ 60).ToString("0") + ":" + (currentTime % 60).ToString("0");
+        if (currentTime < 0)
+            timeUp();
+    }
+
+    void timeUp()
+    {
+        Debug.Log("Time Up");
     }
 }

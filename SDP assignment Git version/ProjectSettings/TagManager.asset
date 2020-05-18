@@ -17,9 +17,9 @@ TagManager:
   - character
   - frountground
   - weapon
-  - 
-  - 
-  - 
+  - P1
+  - P2
+  - P3
   - 
   - 
   - 
@@ -46,4 +46,7 @@ TagManager:
     locked: 0
   - name: character
     uniqueID: 2090303815
+    locked: 0
+  - name: camera
+    uniqueID: 2793620199
     locked: 0

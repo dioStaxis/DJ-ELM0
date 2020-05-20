@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playerIdentity : MonoBehaviour
+public class identity_number: MonoBehaviour
 {
+    public static int playernumber = 0;
     // Start is called before the first frame update
-    void Start()
+    public int addNewPlayer()
     {
-               
+        return playernumber++;
     }
 }

@@ -148,6 +148,9 @@ MonoBehaviour:
   rb: {fileID: 6055454045793654733}
   impactEffect: {fileID: 5336601923525800872, guid: 11d3338a6f12bf944bfd04adb250eedb,
     type: 3}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 4096
 --- !u!95 &3941847553129501537
 Animator:
   serializedVersion: 3

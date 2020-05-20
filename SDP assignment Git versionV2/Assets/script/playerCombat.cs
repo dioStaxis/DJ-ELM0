@@ -1,9 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Mirror;
 
-public class playerCombat : NetworkBehaviour
+public class playerCombat : MonoBehaviour
 {
     public Animator animator;
 
@@ -30,15 +29,9 @@ public class playerCombat : NetworkBehaviour
     public GameObject bulletPrefab;
     // Update is called once per frame
 
-    [Client]
     void Update()
     {
         cruuentWeaponStat();
-
-        if (!hasAuthority)
-        {
-            return;
-        }
 
         if (Time.time >= nextAttackTime)
         {

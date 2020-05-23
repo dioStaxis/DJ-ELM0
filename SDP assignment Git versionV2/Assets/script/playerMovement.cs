@@ -2,9 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Mirror;
 
-public class playerMovement : NetworkBehaviour
+public class playerMovement : MonoBehaviour
 {
     public player_controller controller;
     public Animator animator;
@@ -14,13 +13,8 @@ public class playerMovement : NetworkBehaviour
     bool jump = false;
     bool crouch = false;
 
-    [Client]
     void Update()
     {
-        if (!hasAuthority)
-        {
-            return;
-        }
         horizontalmove = Input.GetAxisRaw("Horizontal")*runspeed;
 
         animator.SetFloat("speed", Math.Abs(horizontalmove));

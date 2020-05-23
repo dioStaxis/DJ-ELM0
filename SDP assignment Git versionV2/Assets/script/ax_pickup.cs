@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Mirror;
 
-public class ax_pickup : NetworkBehaviour
+public class ax_pickup : MonoBehaviour
 {
     public LayerMask playyerLayer;
 

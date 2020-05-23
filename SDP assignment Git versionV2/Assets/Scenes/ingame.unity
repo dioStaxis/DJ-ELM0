@@ -6185,7 +6185,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Timer
+  m_text: Time
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5c80dc962dbb15e40ade6bf500dbbfa0, type: 2}
   m_sharedMaterial: {fileID: 7452447478771577526, guid: 5c80dc962dbb15e40ade6bf500dbbfa0,
@@ -6252,10 +6252,10 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 87.06561, y: 0, z: 119.90615, w: 165.01857}
+  m_margin: {x: 87.06561, y: 0, z: 50.258648, w: 165.01857}
   m_textInfo:
     textComponent: {fileID: 648119411}
-    characterCount: 5
+    characterCount: 4
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -8223,7 +8223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.98039216}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.5882353}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:

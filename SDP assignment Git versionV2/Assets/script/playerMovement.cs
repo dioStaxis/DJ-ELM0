@@ -7,27 +7,34 @@ public class playerMovement : MonoBehaviour
 {
     public player_controller controller;
     public Animator animator;
-
+    public Joystick joystick;   
     float horizontalmove = 0f;
+    float verticalmove = 0f;
     public float runspeed = 40f;
     bool jump = false;
     bool crouch = false;
 
     void Update()
     {
-        horizontalmove = Input.GetAxisRaw("Horizontal")*runspeed;
-
+        if(joystick.Horizontal >= 0.2f || joystick.Horizontal <=-0.2f)
+        {
+            horizontalmove = joystick.Horizontal * runspeed;
+        }else
+        {
+            horizontalmove = 0;
+        }
+        
         animator.SetFloat("speed", Math.Abs(horizontalmove));
-
-        if (Input.GetButtonDown("Jump"))
+        verticalmove = joystick.Vertical;
+        if (verticalmove > .5f)
         {
             jump = true;
             animator.SetBool("Jumping", true);
         }
-        if (Input.GetButtonDown("crouch"))
+        if (verticalmove < -.5f)
         {
             crouch = true;
-        }else if (Input.GetButtonUp("crouch"))
+        }else 
         {
             crouch = false;
         }

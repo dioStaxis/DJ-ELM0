@@ -51,7 +51,7 @@ public class playerCombat : MonoBehaviour
         {
             if (Input.GetButtonDown("Fire1"))
             {
-                if(current_stamina >= 99)
+                if (current_stamina >= 99)
                 {
                     ShootSpecial();
                     current_stamina -= current_stamina;
@@ -65,11 +65,37 @@ public class playerCombat : MonoBehaviour
 
             }
         }
-        if(current_stamina < MaxStamina)
+        if (current_stamina < MaxStamina)
         {
             current_stamina += (float)(1 * Time.fixedDeltaTime);
         }
         stamina.setStamina(current_stamina);
+    }
+
+    public void mobileAttack(){
+        if (Time.time >= nextAttackTime)
+        {
+                Attack();
+                nextAttackTime = Time.time + 1f / attackRate;
+        }
+    }
+
+    public void mobileShoot()
+    {
+        if (Time.time >= nextFireTime)
+        {
+                if (current_stamina >= 99)
+                {
+                    ShootSpecial();
+                    current_stamina -= current_stamina;
+                    nextFireTime = Time.time + 1f / attackRate;
+                }
+                else
+                {
+                    Shoot();
+                    nextFireTime = Time.time + 1f / attackRate;
+                }
+        }
     }
 
     void cruuentWeaponStat()

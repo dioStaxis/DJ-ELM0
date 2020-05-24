@@ -5444,6 +5444,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TimeText: {fileID: 648119411}
   GameLengthSec: 125
+--- !u!114 &202986047 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5352771091289937882, guid: d9c5a1be4443a7e41b141f5e37a073c1,
+    type: 3}
+  m_PrefabInstance: {fileID: 2045437116}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &203127697
 GameObject:
   m_ObjectHideFlags: 0
@@ -6302,7 +6314,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.22284362, y: 0.7162664}
   m_AnchorMax: {x: 0.70126075, y: 0.98689955}
-  m_AnchoredPosition: {x: -87.00006, y: -164}
+  m_AnchoredPosition: {x: -87.00007, y: -164}
   m_SizeDelta: {x: 206.00012, y: 162.9114}
   m_Pivot: {x: 0, y: 0}
 --- !u!1 &736332502
@@ -9584,4 +9596,4 @@ MonoBehaviour:
     m_Mode: 1
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
-  fill: {fileID: 0}
+  fill: {fileID: 202986047}

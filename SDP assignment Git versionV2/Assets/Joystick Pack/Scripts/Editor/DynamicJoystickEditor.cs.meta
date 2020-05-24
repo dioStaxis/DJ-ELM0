@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 52071c88a467b46438b3cbf159bf988b
+=======
+<<<<<<< HEAD:SDP assignment Git versionV2/Assets/Joystick Pack/Examples/JoystickSetterExample.cs.meta
+guid: 3d73bf03f88f371469fd7b43fc97d77e
+=======
+guid: 52071c88a467b46438b3cbf159bf988b
+>>>>>>> 8d78ed177ef7bf9b5df077d99d73b9517921b89f:SDP assignment Git versionV2/Assets/Joystick Pack/Scripts/Editor/DynamicJoystickEditor.cs.meta
+>>>>>>> 8d78ed177ef7bf9b5df077d99d73b9517921b89f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

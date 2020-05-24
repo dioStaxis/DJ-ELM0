@@ -1,9 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
+using System.Threading;
 using UnityEngine;
-using Mirror;
 
-public class playerCombat : NetworkBehaviour
+public class playerCombat : MonoBehaviour
 {
     public Animator animator;
 
@@ -19,6 +20,10 @@ public class playerCombat : NetworkBehaviour
     float nextAttackTime = 0f;
     float nextFireTime = 0f;
 
+    float current_stamina = 0f;
+    float MaxStamina = 100;
+
+    public staminaBar stamina;
 
     public enum weaponName
     {
@@ -28,18 +33,12 @@ public class playerCombat : NetworkBehaviour
 
 
     public GameObject bulletPrefab;
+    public GameObject specialBulletPrefab;
     // Update is called once per frame
 
-    [Client]
     void Update()
     {
         cruuentWeaponStat();
-
-        if (!hasAuthority)
-        {
-            return;
-        }
-
         if (Time.time >= nextAttackTime)
         {
             if (Input.GetButtonDown("attack"))
@@ -47,19 +46,56 @@ public class playerCombat : NetworkBehaviour
                 Attack();
                 nextAttackTime = Time.time + 1f / attackRate;
             }
-
-
-
         }
         if (Time.time >= nextFireTime)
         {
             if (Input.GetButtonDown("Fire1"))
             {
-                Shoot();
-                nextFireTime = Time.time + 1f / attackRate;
+                if (current_stamina >= 99)
+                {
+                    ShootSpecial();
+                    current_stamina -= current_stamina;
+                    nextFireTime = Time.time + 1f / attackRate;
+                }
+                else
+                {
+                    Shoot();
+                    nextFireTime = Time.time + 1f / attackRate;
+                }
+
             }
         }
+        if (current_stamina < MaxStamina)
+        {
+            current_stamina += (float)(1 * Time.fixedDeltaTime);
+        }
+        stamina.setStamina(current_stamina);
+    }
 
+    public void mobileAttack(){
+        if (Time.time >= nextAttackTime)
+        {
+                Attack();
+                nextAttackTime = Time.time + 1f / attackRate;
+        }
+    }
+
+    public void mobileShoot()
+    {
+        if (Time.time >= nextFireTime)
+        {
+                if (current_stamina >= 99)
+                {
+                    ShootSpecial();
+                    current_stamina -= current_stamina;
+                    nextFireTime = Time.time + 1f / attackRate;
+                }
+                else
+                {
+                    Shoot();
+                    nextFireTime = Time.time + 1f / attackRate;
+                }
+        }
     }
 
     void cruuentWeaponStat()
@@ -91,10 +127,16 @@ public class playerCombat : NetworkBehaviour
         weaponShootingAnimation();
         Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
     }
+    void ShootSpecial()
+    {
+        animator.SetTrigger("throw");
+        weaponShootingAnimation();
+        Instantiate(specialBulletPrefab, firePoint.position, firePoint.rotation);
+    }
+
 
     void Attack()
     {
-        
         animator.SetTrigger("Attack");
         weaponAttackAnimation();
   

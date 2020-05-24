@@ -18,7 +18,8 @@ public class timer : MonoBehaviour
     void Update()
     {
         currentTime -= 1 * Time.deltaTime;
-        TimeText.text = ((currentTime-30)/ 60).ToString("0") + ":" + (currentTime % 60).ToString("0");
+        //TimeText.text = ((currentTime-30)/ 60).ToString("0") + ":" + (currentTime % 60).ToString("0");
+        TimeText.text = " "+currentTime.ToString("0");
         if (currentTime < 0)
             timeUp();
     }

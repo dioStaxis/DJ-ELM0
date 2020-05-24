@@ -6,14 +6,14 @@ public class weapon : MonoBehaviour
 {
     public Animator animator;
     public GameObject swordPrefab;
-    public GameObject Sword;
+    public GameObject sword;
     public GameObject Ax;
 
     public void equipeSword()
     {
         reloadWeapon();
-        Sword.SetActive(true);
-        Sword.GetComponent<sword>().equired();
+        sword.SetActive(true);
+        sword.GetComponent<sword>().equired();
         
     }
     public void equipeAx()
@@ -26,7 +26,7 @@ public class weapon : MonoBehaviour
 
     void reloadWeapon()
     {
-        Sword.SetActive(false);
+        sword.SetActive(false);
         Ax.SetActive(false);
     }
 }

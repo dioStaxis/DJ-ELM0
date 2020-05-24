@@ -162,4 +162,47 @@ public class playerCombat : MonoBehaviour
             return; 
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
+
+
+    public void playershoot()
+    {
+        if (Time.time >= nextFireTime)
+        {
+            {
+                if (current_stamina >= 99)
+                {
+                    ShootSpecial();
+                    current_stamina -= current_stamina;
+                    nextFireTime = Time.time + 1f / attackRate;
+                }
+                else
+                {
+                    Shoot();
+                    nextFireTime = Time.time + 1f / attackRate;
+                }
+
+            }
+        }
+        if (current_stamina < MaxStamina)
+        {
+            current_stamina += (float)(1 * Time.fixedDeltaTime);
+        }
+        stamina.setStamina(current_stamina);
+    }
+    public void playerAttack()
+    {
+        cruuentWeaponStat();
+        if (Time.time >= nextAttackTime)
+        {
+            {
+                Attack();
+                nextAttackTime = Time.time + 1f / attackRate;
+            }
+        }
+        if(current_stamina < MaxStamina)
+        {
+            current_stamina += (float)(1 * Time.fixedDeltaTime);
+        }
+        stamina.setStamina(current_stamina);
+    }
 }

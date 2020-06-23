@@ -28,6 +28,11 @@ We also wanted to produce a game that was simple enough for anyone to play as we
 
 ## Screenshots
 
+#### This is the main menu with the title of the game, it's play, option and exit buttons.
+
+#### An in-game view during game play. The character sprites, timer, weapons, buttons and map are visibile.
+
+## ![DJ-ELM0](media/in-game.png)
 
 ## Tech/Framework used
 

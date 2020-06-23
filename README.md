@@ -1,6 +1,7 @@
 # DJ-ELM0
 
 # ![DJ-ELM0](media/2D_logo.png)
+Created on [flamingtext](https://flamingtext.com).\
 
 ## Software Development Practices 2-D Fighting Game
 
@@ -11,10 +12,9 @@ This is the master branch.
 
 ## Motivation
 
-
-
-## Build Status
-
+"Fuzzy Fighters" is 2-D fighting game application that we created to be the main project for our COMP602 Software Development Practice class. 
+This project was to help us understand the role of software engineering processes and practices in managing the complexity, quality and timeliness of software development projects.
+This also includes collaborating within a team to scope, plan and manage the development of the project.
 
 ## Code Style
 
@@ -24,6 +24,7 @@ This is the master branch.
 
 ## Tech/Framework used
 
+- [SCRUM](https://www.scrum.org/resources/what-is-scrum#:~:text=Scrum%20is%20a%20framework%20within,team%20collaboration%20on%20complex%20products.)
 
 ## Features
 
@@ -37,3 +38,6 @@ This is the master branch.
 ## How to use?
 
 
+## Built with
+
+- [Unity](https://unity.com/)

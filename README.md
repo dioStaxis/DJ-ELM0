@@ -24,6 +24,7 @@ We also wanted to produce a game that was simple enough for anyone to play as we
 
 ## Code Style
 
+ - C# Standard
 
 ## Screenshots
 

@@ -35,9 +35,29 @@ We also wanted to produce a game that was simple enough for anyone to play as we
 
 ## Features
 
+- [X] PvE/Single Player Mode
+- [ ] PVP/Mulitplayer Mode
+- [X] Interactive item spawns
+- [X] Dynamic map and backgrounds
 
 ## Code Example
 
+```cs
+public enum weaponName
+{
+    hand, sowrd, ax
+}
+public static weaponName current_weapon = weaponName.hand;
+public GameObject bulletPrefab;
+public GameObject specialBulletPrefab;
+void Start()
+{
+    rb = GetComponent<Rigidbody2D>();
+}
+
+// Update is called once per frame
+
+```
 
 ## Installation
 

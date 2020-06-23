@@ -12,7 +12,7 @@ This is the master branch.
 
 ## Description
 
-This is a video game that focuses on the fighting game genre. It involves close combat of two players selected from a limited range of characters in a fixed stage. The characters may attack their opponent until their health reaches zero or the rounds time expires.
+This is a video game that focuses on the fighting game genre. It involves close combat of two players selected from a limited range of characters in a fixed stage. The characters may attack their opponent until their health reaches zero or the round's time expires.
 
 ## Motivation
 

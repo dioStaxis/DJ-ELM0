@@ -8,7 +8,7 @@ Created on [flamingtext](https://flamingtext.com)
 ## Members: 
 Maaka, Lance, Edward, Jordan, Dion.   
 
-This is the release branch.
+This is the Release branch.
 
 ## Description
 

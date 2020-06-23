@@ -1,6 +1,6 @@
 # DJ-ELM0
 
-# ![DJ-ELM0](media/2D_logo - Copy.png)
+# ![DJ-ELM0](media/logo.png)
 Created on [flamingtext](https://flamingtext.com)
 
 ## Software Development Practices 2-D Fighting Game

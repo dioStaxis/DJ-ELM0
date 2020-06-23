@@ -1920,6 +1920,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 229518830}
   m_CullTransparentMesh: 0
+--- !u!114 &270108892 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6699864218515140627, guid: a035c1c4ebb24e74fa66c6909dbb28d4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1331148411}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7113ee6e40fc26c45ac4b82434fe5ac8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &280192116
 GameObject:
   m_ObjectHideFlags: 0
@@ -3033,6 +3045,18 @@ MonoBehaviour:
     type: 3}
   AxPrefabIcon: {fileID: 192906783335607882, guid: dd56cae0d969579499440f8b145be786,
     type: 3}
+  Lv1Armor: {fileID: 4081019465947541655, guid: 4e1c03eceda9cc64bb5fb78e2a433bf6,
+    type: 3}
+  Lv2Armor: {fileID: 3642974847194594872, guid: 62fd4b757f2c7a34e8333d437edb90e8,
+    type: 3}
+  Lv3Armor: {fileID: 1861783386649165195, guid: d8795ba5a38d1804aa5fbc956cfd0d62,
+    type: 3}
+  Lv1Potion: {fileID: 8824880652023044976, guid: 988169e6809b84240a1290ca3b7a79b0,
+    type: 3}
+  Lv2Potion: {fileID: 2462040874838803336, guid: dfa914b73ddb15a46acf7edf4302f297,
+    type: 3}
+  Lv3Potion: {fileID: 982172429505359027, guid: bb6f101b9c960c9459d13a33db2afa7c,
+    type: 3}
   spownLayer:
     serializedVersion: 2
     m_Bits: 1024
@@ -3059,6 +3083,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 891502038576973788, guid: 98ea9cf878ea3b241954adaf3c5341a4,
+        type: 3}
+      propertyPath: m_Value
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4470494043564671932, guid: 98ea9cf878ea3b241954adaf3c5341a4,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -3084,6 +3113,11 @@ PrefabInstance:
       propertyPath: UI
       value: 
       objectReference: {fileID: 1564790633}
+    - target: {fileID: 5290934475453511795, guid: 98ea9cf878ea3b241954adaf3c5341a4,
+        type: 3}
+      propertyPath: ArmorBar
+      value: 
+      objectReference: {fileID: 962776379}
     - target: {fileID: 5290934475453511797, guid: 98ea9cf878ea3b241954adaf3c5341a4,
         type: 3}
       propertyPath: m_Name
@@ -3203,6 +3237,11 @@ PrefabInstance:
     - target: {fileID: 8244470223912947786, guid: 98ea9cf878ea3b241954adaf3c5341a4,
         type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8244470223912947786, guid: 98ea9cf878ea3b241954adaf3c5341a4,
+        type: 3}
+      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -3344,6 +3383,18 @@ MonoBehaviour:
     type: 3}
   specialBulletPrefab: {fileID: 1854669205566749870, guid: 43ea847824407a84ba99d63359c95a0e,
     type: 3}
+--- !u!114 &962776379 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3486348904016053233, guid: 98ea9cf878ea3b241954adaf3c5341a4,
+    type: 3}
+  m_PrefabInstance: {fileID: 863433371}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7113ee6e40fc26c45ac4b82434fe5ac8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1018649268
 GameObject:
   m_ObjectHideFlags: 0
@@ -4436,10 +4487,20 @@ PrefabInstance:
       propertyPath: UI
       value: 
       objectReference: {fileID: 1564790633}
+    - target: {fileID: 4298237593375203491, guid: a035c1c4ebb24e74fa66c6909dbb28d4,
+        type: 3}
+      propertyPath: ArmorBar
+      value: 
+      objectReference: {fileID: 270108892}
     - target: {fileID: 6180747202060746299, guid: a035c1c4ebb24e74fa66c6909dbb28d4,
         type: 3}
       propertyPath: m_IgnoreReversedGraphics
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7994376226849210635, guid: a035c1c4ebb24e74fa66c6909dbb28d4,
+        type: 3}
+      propertyPath: m_Value
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8216405411075076826, guid: a035c1c4ebb24e74fa66c6909dbb28d4,
         type: 3}
@@ -4570,12 +4631,12 @@ PrefabInstance:
     - target: {fileID: 8216405411075076838, guid: a035c1c4ebb24e74fa66c6909dbb28d4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.7
+      value: 6.53
       objectReference: {fileID: 0}
     - target: {fileID: 8216405411075076838, guid: a035c1c4ebb24e74fa66c6909dbb28d4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.7
+      value: 8.19
       objectReference: {fileID: 0}
     - target: {fileID: 8216405411075076838, guid: a035c1c4ebb24e74fa66c6909dbb28d4,
         type: 3}
@@ -4640,6 +4701,11 @@ PrefabInstance:
     - target: {fileID: 9139213422290120807, guid: a035c1c4ebb24e74fa66c6909dbb28d4,
         type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9139213422290120807, guid: a035c1c4ebb24e74fa66c6909dbb28d4,
+        type: 3}
+      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

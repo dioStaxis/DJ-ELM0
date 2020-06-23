@@ -10,6 +10,12 @@ public class random_generate_item : MonoBehaviour
 {
     public GameObject SwordPrefabIcon;
     public GameObject AxPrefabIcon;
+    public GameObject Lv1Armor;
+    public GameObject Lv2Armor;
+    public GameObject Lv3Armor;
+    public GameObject Lv1Potion;
+    public GameObject Lv2Potion;
+    public GameObject Lv3Potion;
 
     public LayerMask spownLayer;
 
@@ -40,7 +46,34 @@ public class random_generate_item : MonoBehaviour
                 Vector3 overlapPointV3 = overlapPoint;
                 overlapPointV3.y += 1.3f;
                 Quaternion default_Quaternion = new Quaternion(0, 0, 0, 0);
-                Instantiate(SwordPrefabIcon, overlapPointV3, default_Quaternion);
+                    float spownItemNumber = UnityEngine.Random.Range(1, 8);
+                    switch (spownItemNumber)
+                    {
+                        case 1:
+                            Instantiate(SwordPrefabIcon, overlapPointV3, default_Quaternion);
+                            break;
+                        case 2:
+                            Instantiate(AxPrefabIcon, overlapPointV3, default_Quaternion);
+                            break;
+                        case 3:
+                            Instantiate(Lv1Armor, overlapPointV3, default_Quaternion);
+                            break;
+                        case 4:
+                            Instantiate(Lv2Armor, overlapPointV3, default_Quaternion);
+                            break;
+                        case 5:
+                            Instantiate(Lv3Armor, overlapPointV3, default_Quaternion);
+                            break;
+                        case 6:
+                            Instantiate(Lv1Potion, overlapPointV3, default_Quaternion);
+                            break;
+                        case 7:
+                            Instantiate(Lv2Potion, overlapPointV3, default_Quaternion);
+                            break;
+                        case 8:
+                            Instantiate(Lv3Potion, overlapPointV3, default_Quaternion);
+                            break;
+                    }
                 //Debug.Log(itemSpownPositionX+" ,"+itemSpownPositionY);
                 Switch = false;
             }

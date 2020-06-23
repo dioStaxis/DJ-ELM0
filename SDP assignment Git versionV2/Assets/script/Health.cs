@@ -19,22 +19,23 @@ public class Health : MonoBehaviour
     {
         current_health = MaxHealth;
         healthbar.setMaxHealth((int)MaxHealth);
+        ArmorBar.setArmor(armorAmount);
     }
 
     public void takeDamage(int Damage_value)
     {
         animator.SetTrigger("hurt");
-        int afterArmorBlock = this.armorAmount - Damage_value;
+        int afterArmorBlock = armorAmount - Damage_value;
         if (afterArmorBlock<0)
         {
-            this.armorAmount = 0;
+            armorAmount = 0;
+            current_health  = current_health + afterArmorBlock;
         }
         else
         {
-            this.armorAmount = afterArmorBlock;
+            armorAmount = afterArmorBlock;
         }
-        ArmorBar.setArmor(this.armorAmount);
-        current_health  = current_health - afterArmorBlock;
+        ArmorBar.setArmor(armorAmount);
         healthbar.setHealth((int)current_health);
         if (current_health <= 0)
         {

@@ -9,6 +9,10 @@ public class timer : MonoBehaviour
 {
     public TextMeshProUGUI TimeText;
     public float GameLengthSec = 180f;
+    public GameObject player1;
+    public GameObject player2;
+    public GameObject UI;
+
     private float currentTime = 0f;
     private void Start()
     {
@@ -27,5 +31,20 @@ public class timer : MonoBehaviour
     void timeUp()
     {
         Debug.Log("Time Up");
+        if (player1.GetComponent<Health>().getHealth()> player2.GetComponent<Health>().getHealth())
+        {
+            GameObject p1Win = UI.transform.GetChild(1).gameObject;
+            p1Win.SetActive(true);
+        }
+        else if (player1.GetComponent<Health>().getHealth() == player2.GetComponent<Health>().getHealth())
+        {
+            GameObject draw = UI.transform.GetChild(3).gameObject;
+            draw.SetActive(true);
+        }
+        else
+        {
+            GameObject p2Win = UI.transform.GetChild(2).gameObject;
+            p2Win.SetActive(true);
+        }
     }
 }
